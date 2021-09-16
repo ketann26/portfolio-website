@@ -1,0 +1,71 @@
+body{
+	background: linear-gradient(steelblue, white);
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#heading{
+	font-family: 'Oswald', sans-serif;
+}
+
+#my-image img{
+	width: 40%;
+}
+
+#my-image{
+	margin: 10px;
+	display: flex;
+	justify-content: space-between;
+
+	align-items: center;
+}
+
+.bio
+{
+	
+}
+
+.social li{
+	list-style-type: none;
+	transition: transform 0.2s;
+	margin-left: -40px;
+	width: 50px;
+}
+
+.social li:hover{
+	transform: scale(1.2);
+}
+
+.intro{
+	/*font-size: 1.25em;*/
+}
+
+.navbar{
+	text-align: right;
+}
+
+.logo{
+	align-content: left;
+	height: 150px;
+}
+
+.container{
+	background: #fafafa;
+	margin: 10px;
+	height: 300px;
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.container-item{
+	background: #1c7326;
+	color: white;
+	font-size: 25px;
+
+	text-align: center;
+	width: 70px;
+	line-height: 50px;
+	margin: 10px;
+}
