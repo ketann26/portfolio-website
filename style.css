@@ -1,9 +1,31 @@
 body{
-	background: linear-gradient(steelblue, white);
+	background: #232122;
 	font-family: 'Titillium Web', sans-serif;
 }
 
-#my-image{
+.heading-container{
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-bottom: 200px;
+
+	display: grid;
+}
+
+.heading{
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	
+	color: #ffffff;
+	font-size: 100px;
+	margin: 10px;
+}
+
+.sub-heading{
+	color: #A2A2A2;
+	font-size: 30px;
+	margin: 10px;
+}
+
+.my-image{
 	margin: 10px;
 	display: flex;
 	justify-content: space-around;
@@ -11,13 +33,8 @@ body{
 	align-items: center;
 }
 
-#my-image img{
+.my-image img{
 	width: 30%;
-}
-
-.heading{
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
 }
 
 .my-image-item{
@@ -26,6 +43,7 @@ body{
 
 	flex-grow: ;
 	text-align: center;
+	color: #A2A2A2;
 }
 
 .social li{
@@ -41,6 +59,31 @@ body{
 
 .navbar{
 	text-align: right;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: flex-start;
+
+	
+}
+
+.nav-item{
+	margin: 20px;
+	font-size: 25px;
+	flex-grow: 1;
+
+	text-align: center;
+}
+
+.nav-item a{
+    color: #0060B6;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
 }
 
 .logo{
@@ -51,7 +94,7 @@ body{
 #skill-container{
 	display: grid;
 	grid-template-rows: auto auto auto;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto auto auto;
 	justify-content: space-around;
 }
 
