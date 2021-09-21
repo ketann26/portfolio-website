@@ -13,19 +13,22 @@
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		
 		<div class="navbar">
 			<img class="logo" src="images/logo-2.png">
-			<div class="nav-item"><a href = "home.html">Home</a></div>
-			<div class="nav-item"><a href = "about.html">About</a></div>
-			<div class="nav-item"><a href = "portfolio.html">Portfolio</a></div>
-			<div class="nav-item"><a href = "contact.html">Contact</a></div>
+			<div class="nav-item">
+  				<a href = "home.html">HOME</a>
+  			</div>
+			<div class="nav-item"><a href = "about.html">ABOUT</a></div>
+			<div class="nav-item"><a href = "portfolio.html">PORTFOLIO</a></div>
+			<div class="nav-item"><a href = "contact.html">CONTACT</a></div>
 		</div>
 
-		
+		<!-- Intro Section -->
 
 		<div class="heading-container">
 			<h1 class="heading">Hey There!</h1>
@@ -33,61 +36,76 @@
 			<p style="color: steelblue; margin: 10px; font-size: 30px; font-weight: 600;">I am actively looking for Internship/Work opportunities.</p>
 		</div>
 
+		<!-- About Me Section -->
 
-		<div class="my-image">
-			<p class="my-image-item">Machine Learning | Computer Vision | Front End | Back End</p>
+		<section id="about">	
 
-			<img class="my-image-item" src="images/ketan.jpg" alt="Ketan">
+			<div class="svg-wrapper">
+				<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+		    		<rect class="shape" height="60" width="320"/>
+		  		</svg>
+				<div class="section-heading">About Me</div>
+			</div>
 
-			<p class="my-image-item">An avid reader, developer, hodophile, explorer, stock market enthusiast, gadgethead, philomath</p>
-		</div>
+			<div class="my-image">
+				<p class="my-image-item">Machine Learning | Computer Vision | Front End | Back End</p>
+
+				<img class="my-image-item" src="images/ketan.jpg" alt="Ketan">
+
+				<p class="my-image-item">An avid reader, developer, hodophile, explorer, stock market enthusiast, gadgethead, philomath</p>
+			</div>
+
+		</section>
 		
-		<!-- <div class="social-container">
-			<ul class="social">
-				<li>
-					<img src="images/fb.png" height="45px">
-				</li>
-				<li>
-					<img src="images/instagram.png" height="45px">
-				</li>
-				<li>
-					<img src="images/linkedin.png" height="45px">
-				</li>
-				<li>
-					<img src="images/twitter.png" height="45px">
-				</li>
-				<li>
-					<img src="images/git.png" height="45px">
-				</li>
-			</ul>
-		</div> -->
+		<!-- Skills Section -->
 
-		<h1 class="heading">Skills</h1>
-		<div id="skill-container">
-			<div class="skill-item">
-				<img src="images/html.png">
-			</div>
-			<div class="skill-item">
-				<img src="images/css.png">
-			</div>
-			<div class="skill-item">
-				<img src="images/js.png">
-			</div>
-			<div class="skill-item">
-				<img src="images/machine-learning.jpg">
-			</div>
-			<div class="skill-item">
-				<img src="images/opencv.png">
-			</div>
-			<div class="skill-item">
-				<img src="images/nodejs.png">
-			</div>
-			<div class="skill-item">
-				<img src="images/sql.jpg">
-			</div>
-		</div>
+		<section id="skills">
 
-		<h1 class="heading">Projects</h1>
+			<div class="svg-wrapper">
+				<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+		    		<rect class="shape" height="60" width="320" />
+		  		</svg>
+				<div class="section-heading">Skills</div>
+			</div>
+
+			<div id="skill-container">
+				<div class="skill-item">
+					<img src="images/html.png">
+				</div>
+				<div class="skill-item">
+					<img src="images/css.png">
+				</div>
+				<div class="skill-item">
+					<img src="images/js.png">
+				</div>
+				<div class="skill-item">
+					<img src="images/machine-learning.jpg">
+				</div>
+				<div class="skill-item">
+					<img src="images/opencv.png">
+				</div>
+				<div class="skill-item">
+					<img src="images/nodejs.png">
+				</div>
+				<div class="skill-item">
+					<img src="images/sql.jpg">
+				</div>
+			</div>
+
+		</section>
+
+		<section id="projects">
+
+			<div class="svg-wrapper">
+				<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+		    		<rect class="shape" height="60" width="320" />
+		  		</svg>
+				<div class="section-heading">Projects</div>
+			</div>
+
+		</section>
+
+		
 
 		<!-- Playing Around -->
 
@@ -107,6 +125,26 @@
 			<div class="grid-item" style="background: rgb(255,207,119);">D</div>
 			<div class="grid-item" style="background: rgb(140,210,255);">E</div>
 		</div>
+
+		<!-- <div class="social-container">
+			<ul class="social">
+				<li>
+					<img src="images/fb.png" height="45px">
+				</li>
+				<li>
+					<img src="images/instagram.png" height="45px">
+				</li>
+				<li>
+					<img src="images/linkedin.png" height="45px">
+				</li>
+				<li>
+					<img src="images/twitter.png" height="45px">
+				</li>
+				<li>
+					<img src="images/git.png" height="45px">
+				</li>
+			</ul>
+		</div> -->
 
 		<footer class="footer">&#169 2021 Ketan Sharma</footer>
 

@@ -3,6 +3,45 @@ body{
 	font-family: 'Titillium Web', sans-serif;
 }
 
+#about, #skills, #projects{
+	margin-bottom: 200px;
+}
+
+.navbar{
+	text-align: right;
+	display: flex;
+
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.nav-item{
+	margin: 20px;
+	font-size: 20px;
+	flex-grow: 1;
+
+	font-family: 'Fira Sans', sans-serif;
+	text-align: center;
+
+}
+
+.nav-item a{
+    color: #f7f7f2;
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color:#f7f7f2; 
+    text-decoration:none; 
+    cursor:pointer; 
+    text-shadow: 2px 2px 10px; 
+}
+
+.logo{
+	align-content: left;
+	width: 10%;
+}
+
 .heading-container{
 	margin-top: 50px;
 	margin-left: 200px;
@@ -17,12 +56,60 @@ body{
 	color: #ffffff;
 	font-size: 100px;
 	margin: 10px;
+	width: 60%;
 }
 
 .sub-heading{
 	color: #A2A2A2;
-	font-size: 30px;
+	font-size: 25px;
 	margin: 10px;
+	width: 60%;
+
+}
+
+.svg-wrapper {
+  height: 60px;
+	margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.section-heading{
+	color: #fff;
+	font-size: 22px;
+	letter-spacing: 5px;
+	line-height: 32px;
+	position: relative;
+	top: -48px;
+	text-align: center;
 }
 
 .my-image{
@@ -57,39 +144,7 @@ body{
 	transform: scale(1.2);
 }
 
-.navbar{
-	text-align: right;
-	display: flex;
 
-	justify-content: space-between;
-	align-items: flex-start;
-
-	
-}
-
-.nav-item{
-	margin: 20px;
-	font-size: 25px;
-	flex-grow: 1;
-
-	text-align: center;
-}
-
-.nav-item a{
-    color: #0060B6;
-    text-decoration: none;
-}
-
-.nav-item a:hover{
-    color:#00A0C6; 
-    text-decoration:none; 
-    cursor:pointer;  
-}
-
-.logo{
-	align-content: left;
-	width: 10%;
-}
 
 #skill-container{
 	display: grid;
