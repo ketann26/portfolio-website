@@ -5,7 +5,7 @@
 		<title>Ketan Sharma</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="icon" href="images/logo-2.png">
+		<link rel="icon" href="images/favicon.png">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,19 +14,30 @@
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		
-		<div class="navbar">
-			<img class="logo" src="images/logo-2.png">
-			<div class="nav-item">
-  				<a href = "home.html">HOME</a>
-  			</div>
-			<div class="nav-item"><a href = "about.html">ABOUT</a></div>
-			<div class="nav-item"><a href = "portfolio.html">PORTFOLIO</a></div>
-			<div class="nav-item"><a href = "contact.html">CONTACT</a></div>
-		</div>
+		<header class="navbar">
+			<div id="logo-container">
+				<a href="index.html"><img class="logo" src="images/logo-2.png"></a>
+			</div>
+			<nav id="nav-main">
+				<div class="nav-item">
+	  				<a href = "index.html">HOME</a>
+	  			</div>
+				<div class="nav-item">
+					<a href = "about.html">ABOUT</a>
+				</div>
+				<div class="nav-item">
+					<a href = "portfolio.html">PORTFOLIO</a>
+				</div>
+				<div class="nav-item">
+					<a href = "contact.html">CONTACT</a>
+				</div>
+			</nav>
+		</header>
 
 		<!-- Intro Section -->
 
@@ -69,26 +80,40 @@
 			</div>
 
 			<div id="skill-container">
+				
 				<div class="skill-item">
-					<img src="images/html.png">
+					<img class="skill-item-img" src="images/tech/html.png">
+					<p class="skill-item-text" style="top:30px;">HTML</p>
+					
+					<div class="meter">
+					    <div class="progress" style="top:0px;"></div>
+					</div>
+				
+				</div>
+
+				<div class="skill-item">
+					<img class="skill-item-img" src="images/tech/css.png">
+					<p class="skill-item-text" style="top:30px; left: 65px;">CSS</p>
+					
+					<div class="meter">
+					    <div class="progress"></div>
+					</div>
+
 				</div>
 				<div class="skill-item">
-					<img src="images/css.png">
+					<img class="skill-item-img" src="images/tech/js.png">
 				</div>
 				<div class="skill-item">
-					<img src="images/js.png">
+					<img class="skill-item-img" src="images/tech/machine-learning.png">
 				</div>
 				<div class="skill-item">
-					<img src="images/machine-learning.jpg">
+					<img class="skill-item-img" src="images/tech/opencv.png">
 				</div>
 				<div class="skill-item">
-					<img src="images/opencv.png">
+					<img class="skill-item-img" src="images/tech/nodejs.png">
 				</div>
 				<div class="skill-item">
-					<img src="images/nodejs.png">
-				</div>
-				<div class="skill-item">
-					<img src="images/sql.jpg">
+					<img class="skill-item-img" src="images/tech/sql.jpg">
 				</div>
 			</div>
 
@@ -105,11 +130,45 @@
 
 		</section>
 
+		<section id="contact">
+
+			<div class="svg-wrapper" style="transform: translateX(-30px);">
+				<svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+		    		<rect class="shape" height="60" width="320" />
+		  		</svg>
+				<div class="section-heading">Contact Me</div>
+			</div>
+
+			<div class="contact-container">
+				<div class="contact-flex-left">
+					<h1 class="contact-text">Getting in touch is easy!</h1>
+					<p class="contact-subtext" style="font-size: 20px">Reach out to me here:-</p>
+					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/smartphone.png"></span>: +91-8800547001</p>
+					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/email.png"></span>: sharmaketan940@gmail.com</p>
+					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/email.png" style="visibility: hidden;"></span>: 194559@nith.ac.in</p>
+				</div>
+				<form class="contact-flex-right">
+					<div class="form-field">
+						<input class="text-box" type="input" placeholder="Name" required/>
+						<label for="name" class="text-box-label">Name</label>
+					</div>
+					<div class="form-field">
+						<input class="text-box" type="input" placeholder="E-mail" required/>
+						<label for="name" class="text-box-label">E-mail</label>
+					</div>
+					<textarea class="text-box" placeholder="Feedback/Message"></textarea>
+				</form>
+
+
+			</div>
+
+		</section>
+
 		
 
 		<!-- Playing Around -->
 
-		<div class="container">
+		<!-- <div class="container">
 			<div class="container-item">A</div>
 			<div class="container-item">B</div>
 			<div class="container-item">C</div>
@@ -124,7 +183,7 @@
 			<div class="grid-item" style="background: rgb(222,132,255);">C</div>
 			<div class="grid-item" style="background: rgb(255,207,119);">D</div>
 			<div class="grid-item" style="background: rgb(140,210,255);">E</div>
-		</div>
+		</div> -->
 
 		<!-- <div class="social-container">
 			<ul class="social">
@@ -146,7 +205,7 @@
 			</ul>
 		</div> -->
 
-		<footer class="footer">&#169 2021 Ketan Sharma</footer>
+		<footer class="footer" style="color:white; text-align: center;">&#169 2021 Ketan Sharma</footer>
 
 	</body>
 </html>
