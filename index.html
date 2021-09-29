@@ -5,6 +5,7 @@
 		<title>Ketan Sharma</title>
 
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 		<link rel="icon" href="images/favicon.png">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
+		<script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -46,6 +49,7 @@
 			<p class="sub-heading">I am Ketan, a Junior (3rd Year) Student at NIT, Hamirpur and an aspiring developer. With a knack for data organisation and analysis along with a profound interest in mathematical modeling and statistics, I ended up exploring the world of Machine Learning and Deep Learning. Various other domains of my interest include Web Development, Databases, and Embedded Systems.</p>
 			<p style="color: steelblue; margin: 10px; font-size: 30px; font-weight: 600;">I am actively looking for Internship/Work opportunities.</p>
 		</div>
+
 
 		<!-- About Me Section -->
 
@@ -142,22 +146,43 @@
 			<div class="contact-container">
 				<div class="contact-flex-left">
 					<h1 class="contact-text">Getting in touch is easy!</h1>
-					<p class="contact-subtext" style="font-size: 20px">Reach out to me here:-</p>
-					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/smartphone.png"></span>: +91-8800547001</p>
-					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/email.png"></span>: sharmaketan940@gmail.com</p>
-					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/email.png" style="visibility: hidden;"></span>: 194559@nith.ac.in</p>
+					<p class="contact-subtext" style="font-size: 20px">Reach out to me here:-</p><br>
+					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/smartphone.png"></span> : &nbsp +91-8800547001</p>
+					<p class="contact-subtext"><span class="material-icons-round"><img src="images/icons/email.png"></span> : &nbsp sharmaketan940@gmail.com</p>
+					<p class="contact-subtext" style="margin-top: -15px"><span class="material-icons-round"><img src="images/icons/email.png" style="visibility: hidden;"></span> : &nbsp 194559@nith.ac.in</p>
+					<div class="hr-theme-slash-2">
+					  <div class="hr-line"></div>
+					  <div class="hr-icon"><i>OR</i></div>
+					  <div class="hr-line"></div>
+					</div>
+					<div class="social">
+						<a href="#" target="blank"><i class="fab fa-facebook-f"></i></i></a>
+						<a href="#" target="blank"><i class="fab fa-github"></i></i></a>
+						<a href="#" target="blank"><i class="fab fa-linkedin-in"></i></i></a>
+						<a href="#" target="blank"><i class="fab fa-instagram"></i></i></a>
+						<a href="#" target="blank"><i class="fab fa-twitter"></i></i></a>
+					</div>
+
 				</div>
-				<form class="contact-flex-right">
-					<div class="form-field">
-						<input class="text-box" type="input" placeholder="Name" required/>
-						<label for="name" class="text-box-label">Name</label>
-					</div>
-					<div class="form-field">
-						<input class="text-box" type="input" placeholder="E-mail" required/>
-						<label for="name" class="text-box-label">E-mail</label>
-					</div>
-					<textarea class="text-box" placeholder="Feedback/Message"></textarea>
-				</form>
+				<div class="contact-flex-right">
+					<form>
+						<div class="form-floating mb-3">
+							<input type="name" class="form-control" id="floatingInput" placeholder="Name">
+							<label for="name" style="color: #a5a6ac;">Name</label>
+						</div>
+						<div class="form-floating mb-3">
+							<input type="email" class="form-control" id="email" placeholder="E-mail">
+							<label for="floatingInput"style="color: #a5a6ac;">Email</label>						
+						</div>
+						<div class="form-floating">
+							<textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height:100px;"></textarea>
+							<label for="floatingTextarea" style="color: #a5a6ac;">Feedback/Comments</label>
+						</div><br>
+						<div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</div>
+					</form>
+				</div>
 
 
 			</div>
