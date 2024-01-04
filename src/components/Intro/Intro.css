@@ -1,0 +1,111 @@
+#intro {
+	height: calc(100vh - 4rem);
+	width: 100vw;
+	max-width: 85rem;
+	margin: 0 auto;
+	padding: 1rem 2rem;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+#ketan-img {
+	padding: 2rem;
+	width: 100%;
+	height: auto;
+	min-width: 500px;
+	object-fit: cover;
+}
+
+.image-container {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+
+	padding: auto 0;
+}
+
+.intro-contents {
+	flex: 1;
+	height: 100%;
+	font-family: "DM Sans";
+	font-style: normal;
+	padding-left: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro-head {
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 4rem;
+	letter-spacing: 0.15rem;
+}
+
+.intro-text {
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	margin: 5px 0px;
+	color: #828282;
+}
+
+.button {
+	background-color: #27ae60;
+	border: none;
+	color: white;
+	padding: 1.2rem;
+	margin: 2.5rem 0;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.1rem;
+}
+
+.button:hover {
+	background-color: #2dc36b;
+}
+
+.button:active {
+	background-color: #2dc36b;
+	transform: translate(0px, 2px);
+}
+
+@media screen and (max-width: 1080px) {
+	#intro {
+		display: block;
+		margin-top: 2rem;
+	}
+
+	#ketan-img {
+		width: 100%;
+		min-width: 300px;
+		object-fit: cover;
+	}
+
+	.image-container {
+		height: auto;
+	}
+
+	.intro-contents {
+		padding: 1rem 2rem;
+		height: auto;
+	}
+
+	.intro-head {
+		font-size: 2.5rem;
+		line-height: 3.5rem;
+		letter-spacing: 0.05rem;
+	}
+
+	.button {
+		padding: 1rem;
+		margin: 1rem auto;
+		font-size: 1rem;
+	}
+}

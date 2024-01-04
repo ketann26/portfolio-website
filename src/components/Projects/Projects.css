@@ -1,0 +1,50 @@
+#projects {
+	min-height: calc(100vh - 4rem);
+	overflow: hidden;
+	width: 100vw;
+	max-width: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "DM Sans";
+	font-style: normal;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 6rem;
+	margin: 1rem 0;
+	color: #ffffff;
+}
+
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-tile {
+	margin: 1.5rem 1rem;
+	height: 10rem;
+	width: 18rem;
+	background-size: contain;
+	transition: background-image 0.3s;
+}
+
+.project-tile:hover {
+	background-image: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 640px) {
+	.project-tile {
+		margin: 1.5rem 1rem;
+		height: 20vw;
+		width: 40vw;
+		background-size: contain;
+		transition: background-image 0.3s;
+	}
+}

@@ -1,0 +1,92 @@
+#about {
+	overflow: hidden;
+	width: 100vw;
+	max-width: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "DM Sans";
+	font-style: normal;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 6rem;
+	margin: 1rem 0;
+	color: #ffffff;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+	margin: 0 1rem;
+	color: #ffffff;
+}
+
+.tags {
+	color: rgb(0, 115, 255);
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 2rem auto;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 250px;
+	min-width: 80px;
+	height: 220px;
+	margin: 1rem 2rem;
+	padding: 1rem;
+	text-align: left;
+	background: #212121;
+	border-radius: 1.25rem;
+	font-weight: 500;
+	font-size: 1.75rem;
+	line-height: 2.5rem;
+	color: #535353;
+}
+
+.service > img {
+	width: 25%;
+	height: auto;
+}
+
+.skills-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+	grid-template-rows: repeat(4, 1fr);
+	column-gap: 2rem;
+	width: 80%;
+}
+
+@media screen and (max-width: 480px) {
+	.service {
+		font-size: 5vw;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 80%;
+		height: auto;
+	}
+
+	.service > div {
+		flex: 1;
+	}
+
+	.service > img {
+		height: 2.25rem;
+		width: 2.25rem;
+		margin-right: 1.5rem;
+	}
+}
