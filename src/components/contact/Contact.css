@@ -49,6 +49,7 @@ textarea {
 .email,
 .message {
 	font-size: medium;
+	line-height: 1.75rem;
 	width: 100%;
 	max-width: 40rem;
 	margin: 0.5rem;
@@ -68,4 +69,29 @@ textarea {
 	border-radius: 0.5rem;
 	margin: 2rem;
 	padding: 0.75rem 3.5rem;
+}
+
+.submit-btn:active {
+	transform: translate(0px, 2px);
+}
+
+.social-links {
+	display: flex;
+	justify-content: space-around;
+
+	width: 100%;
+	max-width: 15rem;
+}
+
+.fa-icon {
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.fa-icon:hover {
+	transform: scale(1.2);
+}
+
+a {
+	all: unset;
 }

@@ -45,7 +45,6 @@ const Navbar = () => {
 						activeClass="active"
 						to="contact"
 						smooth={true}
-						offset={-100}
 						duration={500}
 						className="nav-link"
 					>
@@ -98,7 +97,6 @@ const Navbar = () => {
 					activeClass="active"
 					to="contact"
 					smooth={true}
-					offset={-100}
 					duration={500}
 					className="mob-link"
 					onClick={() => setShowMenu(false)}
