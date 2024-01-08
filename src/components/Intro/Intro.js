@@ -1,6 +1,7 @@
 import bg from "../../assets/ketan.jpg";
 import { useTypewriter } from "react-simple-typewriter";
 import "./Intro.css";
+import { Link } from "react-scroll";
 
 const Intro = () => {
 	const [text, helper] = useTypewriter({
@@ -18,7 +19,7 @@ const Intro = () => {
 		delaySpeed: 2000,
 	});
 
-	const { isType, isDelete, isDelay, isDone } = helper;
+	const { isType, isDelete } = helper;
 
 	return (
 		<section id="intro">
@@ -29,17 +30,22 @@ const Intro = () => {
 					<span className={isType || isDelete ? "" : "cursor"}>_</span>
 				</div>
 				<div className="button-container">
-					<button type="button" class="button1">
+					<Link to="contact" smooth={true} duration={500} className="button1">
 						Get in Touch
-					</button>
-					<button type="button" class="button2">
+					</Link>
+					<a
+						href="https://drive.google.com/file/d/15Z6TdyVx5nYqrUqA7yikRzRN4gNGVs_K/view?usp=sharing"
+						target="_blank"
+						rel="noreferrer"
+						className="button2"
+					>
 						Download CV
-					</button>
+					</a>
 				</div>
 			</div>
 			<div className="image-container">
 				<div className="circle">
-					<img src={bg} id="ketan-img" />
+					<img src={bg} id="ketan-img" alt="Ketan" />
 				</div>
 			</div>
 		</section>

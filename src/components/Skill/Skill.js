@@ -4,17 +4,25 @@ import ProgressLine from "./ProgressLine";
 import sd from "../../assets/softwaredev.png";
 import fs from "../../assets/fullstack.png";
 import db from "../../assets/database.png";
+import python from "../../assets/python.png";
+import cpp from "../../assets/cpp.png";
+import django from "../../assets/django.png";
+import express from "../../assets/express.png";
+import javascript from "../../assets/javascript.png";
+import mongodb from "../../assets/mongodb.png";
+import reactjs from "../../assets/reactjs.png";
+import sql from "../../assets/sql.png";
 
 const Skill = () => {
 	const skills = [
-		{ label: "Python", level: "80%" },
-		{ label: "C++", level: "90%" },
-		{ label: "Django", level: "70%" },
-		{ label: "JavaScript", level: "90%" },
-		{ label: "ReactJS", level: "70%" },
-		{ label: "ExpressJS", level: "80%" },
-		{ label: "SQL", level: "75%" },
-		{ label: "MongoDB", level: "60%" },
+		{ label: "Python", level: "80%", icon: python },
+		{ label: "C++", level: "90%", icon: cpp },
+		{ label: "Django", level: "70%", icon: django },
+		{ label: "JavaScript", level: "90%", icon: javascript },
+		{ label: "ReactJS", level: "70%", icon: reactjs },
+		{ label: "ExpressJS", level: "80%", icon: express },
+		{ label: "SQL", level: "75%", icon: sql },
+		{ label: "MongoDB", level: "60%", icon: mongodb },
 	];
 
 	return (
@@ -48,14 +56,15 @@ const Skill = () => {
 			<div className="skills-container">
 				{skills.map((s) => {
 					return (
-						<div>
+						<div className="progressBar">
 							<ProgressLine
 								key={s.label}
 								label={s.label}
+								icon={s.icon}
 								visualParts={[
 									{
 										percentage: s.level,
-										color: "#27AE60",
+										color: "#9a33ff",
 									},
 								]}
 							/>

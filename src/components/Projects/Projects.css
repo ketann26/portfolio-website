@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 #projects {
 	min-height: calc(100vh - 4rem);
 	overflow: hidden;
@@ -24,27 +26,122 @@
 .project-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+
+	justify-content: center;
+	column-gap: 3rem;
+	overflow: hidden;
 }
 
 .project-tile {
-	margin: 1.5rem 1rem;
-	height: 10rem;
-	width: 18rem;
-	background-size: contain;
-	transition: background-image 0.3s;
+	position: relative;
+	overflow: hidden;
+	margin: 1.5rem 0;
+	height: 15rem;
+	width: 20vw;
+	min-width: 17rem;
+	background-color: #585858;
+	border-radius: 5%;
 }
 
-.project-tile:hover {
-	background-image: rgba(255, 255, 255, 0.7);
+.summary {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 75%;
+	background-color: rgba(210, 214, 217, 0.75);
+	color: #5c5c5c;
+	font-weight: 500;
+	z-index: 1;
+	padding: 2rem 1rem;
+}
+
+.summary:hover {
+	opacity: 1;
+	animation: fadeIn 0.25s linear;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+.project-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25%;
+	background-color: rgba(42, 42, 42, 0.95);
+	z-index: 1;
+	color: #fff;
+	font-family: Poppins;
+	text-transform: uppercase;
+	padding: 0 1rem;
+}
+
+.project-tile > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.project-title {
+	font-size: 1.2rem;
+}
+
+.tech-stack {
+	font-size: 0.7rem;
+	color: #c5c5c5;
+}
+
+.links {
+	display: flex;
+	column-gap: 0.5rem;
 }
 
 @media screen and (max-width: 640px) {
+	#projects {
+		padding-top: 2rem;
+	}
+
 	.project-tile {
 		margin: 1.5rem 1rem;
-		height: 20vw;
+		height: 25vh;
 		width: 40vw;
 		background-size: contain;
 		transition: background-image 0.3s;
+	}
+
+	.project-title {
+		font-size: 0.9rem;
+	}
+
+	.tech-stack {
+		font-size: 0.6rem;
+	}
+
+	.summary {
+		font-size: 0.85rem;
+		padding: 1rem;
+	}
+
+	.links {
+		column-gap: 0.7rem;
 	}
 }

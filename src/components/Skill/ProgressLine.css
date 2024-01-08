@@ -1,11 +1,33 @@
 .progressVisualFull {
+	flex: 9;
 	display: flex;
 	/* change the value if you want different thickness */
 	height: 6px;
 	margin: 15px 0;
+	z-index: -1;
 }
 
 .progressVisualPart {
 	/* Number of the seconds for complete animation */
 	transition: width 2s;
+}
+
+.alt-text {
+	position: absolute;
+	top: -40%;
+	left: 15%;
+	border-radius: 15%;
+	z-index: 1;
+	background-color: rgba(20, 19, 19, 0.8);
+	padding: 0.5rem 1rem;
+	animation: fadeIn 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

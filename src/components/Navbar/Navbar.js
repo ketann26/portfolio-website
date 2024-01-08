@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import burger from "../../assets/burger.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -52,9 +53,9 @@ const Navbar = () => {
 					</Link>
 				</div>
 
-				<img
-					src={burger}
-					alt="Mobile Menu"
+				<FontAwesomeIcon
+					icon={faBars}
+					size="2xl"
 					className="mob-menu-icon"
 					onClick={() => setShowMenu(!showMenu)}
 				/>
