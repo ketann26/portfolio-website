@@ -31,3 +31,12 @@
 		opacity: 1;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.alt-text {
+		font-size: 0.9rem;
+		top: -30%;
+		left: 25%;
+		padding: 0.3rem 0.8rem;
+	}
+}

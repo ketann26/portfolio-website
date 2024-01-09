@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -36,7 +34,7 @@ const Navbar = () => {
 						activeClass="active"
 						to="projects"
 						smooth={true}
-						offset={-10}
+						offset={20}
 						duration={500}
 						className="nav-link"
 					>
@@ -53,12 +51,17 @@ const Navbar = () => {
 					</Link>
 				</div>
 
-				<FontAwesomeIcon
-					icon={faBars}
-					size="2xl"
-					className="mob-menu-icon"
-					onClick={() => setShowMenu(!showMenu)}
-				/>
+				<div
+					id="mob-menu-icon"
+					onClick={() => {
+						setShowMenu(!showMenu);
+					}}
+					className={showMenu ? "open" : ""}
+				>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</nav>
 			<div className="mob-menu" style={{ display: showMenu ? "flex" : "none" }}>
 				<Link
@@ -67,10 +70,10 @@ const Navbar = () => {
 					smooth={true}
 					offset={-100}
 					duration={500}
-					className="mob-link"
 					onClick={() => setShowMenu(false)}
+					style={{ width: "100%" }}
 				>
-					Home
+					<div className="mob-link">Home</div>
 				</Link>
 				<Link
 					activeClass="active"
@@ -78,10 +81,10 @@ const Navbar = () => {
 					smooth={true}
 					offset={-50}
 					duration={500}
-					className="mob-link"
 					onClick={() => setShowMenu(false)}
+					style={{ width: "100%" }}
 				>
-					About
+					<div className="mob-link">About</div>
 				</Link>
 				<Link
 					activeClass="active"
@@ -89,20 +92,20 @@ const Navbar = () => {
 					smooth={true}
 					offset={-10}
 					duration={500}
-					className="mob-link"
 					onClick={() => setShowMenu(false)}
+					style={{ width: "100%" }}
 				>
-					Portfolio
+					<div className="mob-link">Portfolio</div>
 				</Link>
 				<Link
 					activeClass="active"
 					to="contact"
 					smooth={true}
 					duration={500}
-					className="mob-link"
 					onClick={() => setShowMenu(false)}
+					style={{ width: "100%" }}
 				>
-					Contact
+					<div className="mob-link">Contact</div>
 				</Link>
 			</div>
 		</>

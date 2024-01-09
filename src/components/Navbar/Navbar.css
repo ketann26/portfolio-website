@@ -48,35 +48,103 @@
 	right: 0;
 	width: 100%;
 	z-index: 99;
-	display: flex;
+
 	flex-direction: column;
 	align-items: center;
-	padding: 0.5rem;
+	border-top: 0.2px solid #4f4f4f;
 	height: fit-content;
 	min-width: 15rem;
-	background: rgb(40, 40, 40);
+	background: #171717;
 }
 
-.mob-menu-icon {
+#mob-menu-icon {
 	display: none;
+	width: 40px;
+	height: 35px;
+	position: relative;
+
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+#mob-menu-icon span {
+	display: block;
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background: white;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+#mob-menu-icon span:nth-child(1) {
+	top: 0px;
+}
+
+#mob-menu-icon span:nth-child(2) {
+	top: 13px;
+}
+
+#mob-menu-icon span:nth-child(3) {
+	top: 26px;
+}
+
+#mob-menu-icon.open span:nth-child(1) {
+	top: 15px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+#mob-menu-icon.open span:nth-child(2) {
+	opacity: 0;
+	left: -20px;
+}
+
+#mob-menu-icon.open span:nth-child(3) {
+	top: 15px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
 }
 
 .mob-link {
+	display: flex;
 	color: white;
-	padding: 0.5rem 3rem;
-	margin: 0.25rem;
+	width: 100%;
+	height: 3.5rem;
+	align-items: center;
+	justify-content: center;
 	font-family: "DM Sans";
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 18px;
-	line-height: 23px;
+	border-bottom: 0.2px solid #4f4f4f;
 
 	cursor: pointer;
 }
 
 @media screen and (max-width: 720px) {
-	.mob-menu-icon {
-		display: flex;
+	#mob-menu-icon {
+		display: block;
 	}
 
 	.nav-menu {
