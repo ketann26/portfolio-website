@@ -34,7 +34,7 @@ const Navbar = () => {
 						activeClass="active"
 						to="projects"
 						smooth={true}
-						offset={20}
+						offset={-50}
 						duration={500}
 						className="nav-link"
 					>
