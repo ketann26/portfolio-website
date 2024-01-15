@@ -39,9 +39,13 @@ const Project = ({ thumbnail, name, description, tech, github_url, redirect_url 
 					<a href={github_url} target="_blank" rel="noreferrer">
 						<FontAwesomeIcon className="fa-icon" icon={faGithub} size="xl" />
 					</a>
-					<a href={redirect_url} target="_blank" rel="noreferrer">
-						<FontAwesomeIcon className="fa-icon" icon={faLink} size="lg" />
-					</a>
+					{redirect_url === "" ? (
+						""
+					) : (
+						<a href={redirect_url} target="_blank" rel="noreferrer">
+							<FontAwesomeIcon className="fa-icon" icon={faLink} size="lg" />
+						</a>
+					)}
 				</div>
 			</div>
 		</div>

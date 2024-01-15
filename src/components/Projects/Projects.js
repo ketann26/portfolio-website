@@ -1,10 +1,10 @@
 import { React } from "react";
 import "./Projects.css";
-import webapp from "../../assets/webapp.png";
 import book_recommender from "../../assets/book_recommender.jpg";
 import movieflix from "../../assets/movieflix.jpg";
 import movie_recommender from "../../assets/movie_recommender.jpg";
 import portfolio from "../../assets/portfolio.jpg";
+import delivr from "../../assets/delivr.jpg";
 
 import Project from "./Project";
 
@@ -18,6 +18,15 @@ const Projects = () => {
 			github_url: "https://github.com/ketann26/movieflix",
 			redirect_url: "https://movieflix2024.netlify.app/",
 			thumbnail: movieflix,
+		},
+		{
+			name: "Delivrr",
+			description:
+				"An online ordering service for restaurants, that includes an ordeing flow for customers and a dashboard for restaurant staff to login and track orders.",
+			tech: "Django, SQLite, Bootstrap",
+			github_url: "https://github.com/ketann26/Food-Delivery-App",
+			redirect_url: "",
+			thumbnail: delivr,
 		},
 		{
 			name: "Book Recommender",
